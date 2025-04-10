@@ -162,7 +162,7 @@
     }
 
     async function getAIResponse(message) {
-      const response = await fetch('YOUR_API_GATEWAY_URL', {
+      const response = await fetch('https://7kwybpjy9d.execute-api.us-east-2.amazonaws.com/default/chatbotHandler', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: message })
